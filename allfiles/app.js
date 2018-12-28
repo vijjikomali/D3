@@ -125,7 +125,7 @@ d3.csv("data.csv", function(newsData) {
       .attr("fontsize", circRadius)
       .attr("class", "stateText")
       .on("mouseover", function(data, index) {
-        toolTip.show(data);
+        toolTip.show(data, this);
         d3.select(this).style("stroke", "#323232");
       })
       // //onmouseout event
